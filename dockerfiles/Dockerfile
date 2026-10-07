@@ -5,7 +5,7 @@ RUN dnf -y --nodocs install jq git && \
     tar -zxpf /usr/local/bin/trident-installer-26.06.1.tar.gz -C /usr/local/bin/ && \
     rm /usr/local/bin/trident-installer-26.06.1.tar.gz && \
     mv /usr/local/bin/trident-installer/trident /usr/local/bin/trident && \
-    rm -rf /usr/local/bin/trident-installer
+    rm -rf /usr/local/bin/trident-installer && \
     chmod +x /usr/local/bin/trident
 #COPY index.html /var/www/html/index.html
 #EXPOSE 8080
